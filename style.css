@@ -4,9 +4,10 @@
   box-sizing: border-box;
   font-family:'Poppins';
 }
-body {
+.body{
   padding-top: 80px;
   font-family: 'Poppins';
+  line-height:1.7;
 }
 .nav-hero{
   position:fixed;
@@ -59,5 +60,123 @@ transform:translateY(-3px);
 .logo img{
   height:60px;
 
+}.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  
+  /* Background image settings */
+  background-image: url('assets/Backgoundimage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Remove this — not recommended */
+  /* filter: opacity(0.6); */
+
+  /* background-color: #E6F0E6; */
 }
 
+/* Add this new overlay layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(230, 240, 230, 0.85); /* light tint overlay */
+  z-index: 1;
+}
+
+/* This wraps your hero text/content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.title{
+  color:#2C3E50;
+  font-weight:800;
+  font-size: 64px;
+  /* line-height: 72px; */
+
+}
+.tagline{
+  color:#2C3E50;
+font-size:40px;
+ font-size: 28px;
+  /* line-height: 40px; */
+}
+            
+.Cta-button{
+  
+  border-radius:30px;
+  background-color:#696F98;
+  color:white;
+  border-color:none;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  padding: 16px 40px;
+  font-size: 1.2rem;
+}
+
+.about{
+  background-color:#D4E6D4;
+  padding:60px 20px;
+  min-height:100vh;
+}
+.about-container{
+  display:grid;
+grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items:center;
+  max-width:1200px;
+  margin:0 auto;
+
+}
+.about-title{
+font-size:2.5rem;
+font-weight:600;
+text-align:center;
+margin-bottom:40px;
+grid-column:1/-1;
+}
+
+.content-left{
+  padding-right:20px;
+  padding-top:4px;
+
+}
+.section-card{
+  margin-bottom:20px;
+}
+
+.section-title{
+  font-size:1.5rem;
+  font-weight:600;
+  margin-bottom:15px;
+  padding-left:10px;
+  line-height:45px;
+}
+.section-subtitle{
+  font-size:1rem;
+  line-height:45px;
+  font-style:italic;
+  
+}
+.image-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.about-image{
+  width:100%;
+  max-width:400px;
+  height:auto;
+  
+
+}
