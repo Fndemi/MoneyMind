@@ -2,8 +2,8 @@
 
 A financial literacy platform for Kenyan students that simplifies personal finance lessons from bestselling books.
 
-🌐 **[Live Demo](https://fndemi.github.io/MoneyMind/)**
-
+🌐 **[Live site](https://fndemi.github.io/MoneyMind/)**
+🌐 ** [Figma Link](https://www.figma.com/design/N8YV0x9ixxpryzObhQvSh2/Money-Mind-Ke?node-id=0-1&t=Jxgoanbk7TwJo1eV-1)**
 
 ## About
 
