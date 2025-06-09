@@ -2,6 +2,9 @@
 
 A financial literacy platform for Kenyan students that simplifies personal finance lessons from bestselling books.
 
+🌐 **[Live Demo](https://fndemi.github.io/MoneyMind/)**
+
+
 ## About
 
 MoneyMind KE helps students learn money management through bite-sized lessons from books like "Rich Dad Poor Dad" and "The Psychology of Money". The platform includes budget tracking and goal-setting features designed for Kenyan students.
