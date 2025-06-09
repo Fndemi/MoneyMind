@@ -184,6 +184,7 @@ grid-column:1/-1;
 .features-section {
   background-color: #f5f5f5;
   padding: 80px 20px;
+  position:relative;
 }
 
 .features-title {
@@ -195,12 +196,25 @@ grid-column:1/-1;
   font-family: 'Poppins', sans-serif;
 }
 
+.carousel-wrapper{
+  position:relative;
+  display:flex;
+  align-items:center;
+  max-width:1200px;
+  margin:0 auto;
+  overflow:hidden;
+}
+
 .features-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display:flex;
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  overflow-x: auto;
+  scroll-behavior:smooth;
+  padding:10px 0;
+  scrollbar-width:none; /*  Firefox*/
+}
+.features-container::-webkit-scrollbar{
+  display:none;
 }
 
 .feature-card {
@@ -211,9 +225,11 @@ grid-column:1/-1;
   display: flex;
   text-align:center;
   width:320px;
+  min-width:320px;
   overflow:hidden;
   flex-direction: column;
   padding-bottom:30px;
+  flex-shrink:0;
  
 }
 
@@ -234,6 +250,7 @@ grid-column:1/-1;
   display: flex;
   justify-content: center;
   align-items: center;
+  width:100%;
   
 }
 
@@ -261,20 +278,12 @@ grid-column:1/-1;
   letter-spacing: 1px;
 }
 
-.feature-image{
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .feature-details{
   border-left: 6px solid #4FACFE;
   border-radius:8px;
   margin-top:0px;
   padding-left:16px;
   text-align:left;
-  /* flex-wrap:wrap; */
 }
 .feature-details h4 {
   font-size: 16px;
@@ -635,4 +644,176 @@ color:#F8A401;
   font-style:italic;
   margin-bottom:6px;
   margin-top:10px;
+}.faq-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2d3e50;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color: #f0f4f8;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active .icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background-color: white;
+  padding: 0 16px;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  padding: 12px 0;
+  margin: 0;
+}
+
+/* Smooth scroll for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+.footer-section {
+  background-color: #aac3a2;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeInUp 1s ease-in;
+  position: relative;
+}
+
+.footer-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0d2e13;
+  margin-bottom: 30px;
+}
+
+.visitor-counter {
+  display: inline-flex;
+  align-items: center;
+  background-color: #e7eee5;
+  padding: 15px 30px;
+  border-radius: 40px;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #333;
+}
+
+.visitor-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.footer-link {
+  color: #0a0a0a;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-link i {
+  font-size: 1.2rem;
+}
+
+.back-to-top {
+  display: none; /* hidden by default */
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background: #3a7d44;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+  background: #2c5e33;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 1.2rem;
+  }
+
+  .visitor-counter {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .back-to-top {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
 }

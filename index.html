@@ -1,287 +1,328 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>MoneyMind</title>
-    <link rel="stylesheet" href="style.css">
+  <title>MoneyMind</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  </head>
-  <body>
-
-  <nav class="nav-hero">
+<nav class="nav-hero">
   <div class="nav-container">
+    <a class="logo">
+      <img src="assets/Logo.png" alt="Logo">
+      <span>MONEY MIND KE</span>
+    </a>
 
-  <a class="logo">
-    <img src="assets/Logo.png" alt="Logo">
-    <span>MONEY MIND KE</span>
-  </a>
+    <div class="nav-links">
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Features">Features</a>
+      <a href="#Team">Team</a>
+      <a href="#Testimonials">Testimonials</a>
+      <a href="#Contact">Contact</a>
+    </div>
+  </div>
+</nav>
 
-
-  <div class="nav-links">
-    <a href="#Home" >Home</a>
-    <a href="#About" >About</a>
-    <a href="#Features" >Features</a>
-    <a href="#Team" >Team</a>
-    <a href="#Testimonials" >Testimonials</a>
-    <a href="#Contact" >Contact</a>
-  </div>
-  </div>
-  </nav>
-  <main class="sections">
-    <section  class="hero" id="Home">
-  <div class="hero-content">
-    <h1 class="title">MONEY MIND KE</h1>
-    <p class="tagline">Master Your Money,One Page at a Time</p>
-    <button class="Cta-button">Start Learning</button>
-  </div>
+<main class="sections">
+  <section class="hero" id="Home">
+    <div class="hero-content">
+      <h1 class="title">MONEY MIND KE</h1>
+      <p class="tagline">Master Your Money,One Page at a Time</p>
+      <button class="Cta-button">Start Learning</button>
+    </div>
   </section>
 
   <section class="about" id="About">
-  <div class="about-container">
+    <div class="about-container">
       <h2 class="about-title">About Us</h2>
 
-    <!-- LEFT COLUMN -->
-    <div class="content-left">
+      <!-- LEFT COLUMN -->
+      <div class="content-left">
+        <div class="section-card">
+          <h3 class="section-title">How It All Started</h3>
+          <p class="section-subtitle">
+            Money Mind was born out of personal struggles with financial literacy, frustration, and the urgent need for change. We believe that the best financial transformations happen one chapter at a time.
+          </p>
+        </div>
 
-      <div class="section-card">
-        <h3 class="section-title">How It All Started</h3>
-        <p class="section-subtitle">
-          Money Mind was born out of personal struggles with financial literacy, frustration, and the urgent need for change. We believe that the best financial transformations happen one chapter at a time.
-        </p>
+        <div class="section-card">
+          <h3 class="section-title">What We Do</h3>
+          <p class="section-subtitle">
+            We simplify complex personal finance lessons from bestselling books into short, relatable content for students in Kenya. Our platform guides users through each 'chapter' of growth, one step at a time.
+          </p>
+        </div>
       </div>
 
-      <div class="section-card">
-        <h3 class="section-title">What We Do</h3>
-        <p class="section-subtitle">
-          We simplify complex personal finance lessons from bestselling books into short, relatable content for students in Kenya. Our platform guides users through each 'chapter' of growth, one step at a time.
-        </p>
-      </div>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="image-container">
-      <img src="assets/aboutimage.png" alt="about-image" class="about-image">
-    </div>
-
-  </div>
-</section>
-<section id="Features" class="features-section">
-  <h2 class="features-title">Product Features</h2>
-
-  <div class="features-container">
-    <!-- Feature 1 -->
-    <div class="feature-card education">
-      <div class="feature-image one">
-      <div class="feature-emoji">📚</div>
-      </div>
-      <div class="top">
-      <h3 class="feature-heading">Chapter Microlearning</h3>
-      <p class="feature-subheading">EDUCATION TOOL</p>
-      </div>
-      <div class="feature-details">
-        <h4>Bite-sized Financial Lessons</h4>
-        <p class="feature-highlight">Using spaced repetition & gamification</p>
-        <p class="feature-description">
-          Students engage in 5-minute daily lessons drawn from books like <em>Rich Dad Poor Dad</em> and <em>The Psychology of Money</em>. Over 85% develop smarter spending habits and confidence in managing money — all in under 30 days.
-        </p>
+      <!-- RIGHT COLUMN -->
+      <div class="image-container">
+        <img src="assets/aboutimage.png" alt="about-image" class="about-image">
       </div>
     </div>
+  </section>
 
-    <!-- Feature 2 -->
-    <div class="feature-card planning">
-      <div class="feature-image two">
-         <div class="feature-emoji">💰</div>
-      </div>
-      <h3 class="feature-heading">Smart Budget Tracker</h3>
-      <p class="feature-subheading">PLANNING TOOL</p>
-      <div class="feature-details">
-        <h4>Automated Expense Categorization</h4>
-        <p class="feature-highlight">Using AI-powered SMS analysis</p>
-        <p class="feature-description">
-          Automatically tracks spending via M-Pesa messages, helping students reduce unnecessary expenses by 40% within their first month.
-        </p>
-      </div>
-    </div>
+  <section id="Features" class="features-section">
+    <h2 class="features-title">Product Features</h2>
 
-    <!-- Feature 3 -->
-    <div class="feature-card motivational">
-      <div class="feature-image three">
-       <div class="feature-emoji">🎯</div>
-      </div>
-      <h3 class="feature-heading">Goal Achievement System</h3>
-      <p class="feature-subheading">MOTIVATIONAL TOOL</p>
-      <div class="feature-details">
-        <h4>Visual Progress Milestones</h4>
-        <p class="feature-highlight">Using behavioral psychology triggers</p>
-        <p class="feature-description">
-          By tracking their progress and celebrating milestones with peers, students are 3× more likely to finish financial books and actually apply the lessons to start saving.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" id="scrollLeft">
+        <i class="fas fa-chevron-left"></i>
+      </button>
 
-<section class="testimonial-section" id="Testimonials">
-  <h2>What are the Students Saying?</h2>
+    <div class="features-container" id="carousel">
 
-  <div class="container-testimonial">
-    <div class="cardone ">
-      <div class="testimonial-stars">
-        <i class="fas fa-star"></i> 
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i> 
-        <i class="fas fa-star-half-alt"></i>
+      <div class="feature-card education">
+        <div class="feature-image one">
+          <div class="feature-emoji">📚</div>
+        </div>
+        <div class="top">
+          <h3 class="feature-heading">Chapter Microlearning</h3>
+          <p class="feature-subheading">EDUCATION TOOL</p>
+        </div>
+        <div class="feature-details">
+          <h4>Bite-sized Financial Lessons</h4>
+          <p class="feature-highlight">Using spaced repetition & gamification</p>
+          <p class="feature-description">
+            Students engage in 5-minute daily lessons drawn from books like <em>Rich Dad Poor Dad</em> and <em>The Psychology of Money</em>. Over 85% develop smarter spending habits and confidence in managing money — all in under 30 days.
+          </p>
+        </div>
       </div>
 
-      <p class="test-subtitle">“MoneyMind KE made finance fun! The daily lessons from ‘Rich Dad Poor Dad’ finally helped me understand saving vs. investing. I’ve already started a side hustle thanks to the tips!”</p>  
+      <div class="feature-card planning">
+        <div class="feature-image two">
+          <div class="feature-emoji">💰</div>
+        </div>
+        <h3 class="feature-heading">Smart Budget Tracker</h3>
+        <p class="feature-subheading">PLANNING TOOL</p>
+        <div class="feature-details">
+          <h4>Automated Expense Categorization</h4>
+          <p class="feature-highlight">Using AI-powered SMS analysis</p>
+          <p class="feature-description">
+            Automatically tracks spending via M-Pesa messages, helping students reduce unnecessary expenses by 40% within their first month.
+          </p>
+        </div>
+      </div>
 
-      <div class="pic_name">
-        <img src="assets/student1.jpg" alt="photoone" width="50" height="50">
-        <div class="name">
-          <span class="first_name">-Wanjau M.</span>
-          <span class="school">University of Nairobi Student.</span>
+      <div class="feature-card motivational">
+        <div class="feature-image three">
+          <div class="feature-emoji">🎯</div>
+        </div>
+        <h3 class="feature-heading">Goal Achievement System</h3>
+        <p class="feature-subheading">MOTIVATIONAL TOOL</p>
+        <div class="feature-details">
+          <h4>Visual Progress Milestones</h4>
+          <p class="feature-highlight">Using behavioral psychology triggers</p>
+          <p class="feature-description">
+            By tracking their progress and celebrating milestones with peers, students are 3× more likely to finish financial books and actually apply the lessons to start saving.
+          </p>
         </div>
       </div>
     </div>
+    <button class="carousel-btn right" id="scrollRight">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    </div>
+  </section>
 
- <div class="cardone two">
-      <div class="testimonial-stars">
-        <i class="fas fa-star"></i> 
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i> 
-        <i class="fas fa-star-half-alt"></i>
+  <section class="testimonial-section" id="Testimonials">
+    <h2>What are the Students Saying?</h2>
+
+    <div class="container-testimonial">
+      <div class="cardone">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i> 
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i> 
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+
+        <p class="test-subtitle">"MoneyMind KE made finance fun! The daily lessons from 'Rich Dad Poor Dad' finally helped me understand saving vs. investing. I've already started a side hustle thanks to the tips!"</p>  
+
+        <div class="pic_name">
+          <img src="assets/student1.jpg" alt="photoone" width="50" height="50">
+          <div class="name">
+            <span class="first_name">-Wanjau M.</span>
+            <span class="school">University of Nairobi Student.</span>
+          </div>
+        </div>
       </div>
 
-      <p class="test-subtitle">“As a campus student, I used to live paycheck-to-paycheck. The Psychology of Money summaries changed how I budget—now I save 20% of my allowance!””</p>  
+      <div class="cardone two">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i> 
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i> 
+          <i class="fas fa-star-half-alt"></i>
+        </div>
 
-      <div class="pic_name">
-        <img src="assets/student2.jpg" alt="phototwo" width="50" height="50">
-        <div class="name">
-          <span class="first_name">— Ahmed  K.</span>
-          <span class="school">Strathmore University student.</span>
+        <p class="test-subtitle">"As a campus student, I used to live paycheck-to-paycheck. The Psychology of Money summaries changed how I budget—now I save 20% of my allowance!"</p>  
+
+        <div class="pic_name">
+          <img src="assets/student2.jpg" alt="phototwo" width="50" height="50">
+          <div class="name">
+            <span class="first_name">— Ahmed K.</span>
+            <span class="school">Strathmore University student.</span>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
+  <section class="slogans-section">
+    <h2 class="s_title">Slogans</h2>
+    <div class="container-slogan">
+      <button class="s-btn">Educate</button>
+      <button class="s-btn">Elevate</button>
+      <button class="s-btn">Empower</button>
+    </div>
+  </section>
 
-
-  </div>
-</section>
-
-<section class="slogans-section">
-<h2 class="s_title">Slogans</h2>
-  <div class="container-slogan">
-    <button class="s-btn">Educate</button>
-    <button class="s-btn ">Elevate</button>
-    <button class="s-btn">Empower</button>
-  </div>
-</section>
-
-<section  class="team-section" id="Team">
-  <h2 class="t_title">The Minds Behind MoneyMind KE</h2>
-  <div class="team_container">
-    <div class="card">
-      <img src="assets/CEo.jpeg" alt="Florence" height="50px" width="50px">
-      
+  <section class="team-section" id="Team">
+    <h2 class="t_title">The Minds Behind MoneyMind KE</h2>
+    <div class="team_container">
+      <div class="card">
+        <img src="assets/CEo.jpeg" alt="Florence" height="50px" width="50px">
         <span class="name_role">Founder & CEO</span>
         <span class="name_role">Florence Ndemi</span>
+        <p class="t_text">Built this after maxing out my student loans—now I'm teaching others to avoid my mistakes!</p>
+      </div>
       
-    <p class="t_text"> Built this after maxing out my student loans—now I’m teaching others to avoid my mistakes!</p>
-    </div>
-<div class="card">
-      <img src="assets/productm.jpeg" alt="Florence" height="50px" width="50px">
-      
+      <div class="card">
+        <img src="assets/productm.jpeg" alt="Judy" height="50px" width="50px">
         <span class="name_role">Product Manager</span>
         <span class="name_role">Judy Njeri</span>
+        <p class="t_text">I turn user feedback into features. Your pain points fuel our updates!</p>
+      </div>
       
-    <p class="t_text"> 
-    I turn user feedback into features. Your pain points fuel our updates! </p>
-    </div>
-<div class="card">
-      <img src="assets/developer.jpeg" alt="Florence" height="50px" width="50px">
-      
+      <div class="card">
+        <img src="assets/developer.jpeg" alt="Eric" height="50px" width="50px">
         <span class="name_role">Lead Developer</span>
         <span class="name_role">Eric Wanyoike</span>
+        <p class="t_text">Coding the backbone of MoneyMind KE. No glitches, no downtime—just pure financial growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-section">
+    <h1 class="ai-title">AI Assistant</h1>
+    <div class="ai-container">
+      <div class="chat-area">
+        <div class="message-container">
+          <div class="avatar">
+            <img src="assets/mage--robot.svg" alt="AI Robot">
+          </div>
+          <div class="message">
+            Hello there how can i help you today?
+          </div>
+        </div>
+      </div>
       
-    <p class="t_text"> Coding the backbone of MoneyMind KE. No glitches, no downtime—just pure financial growth.</p>
+      <div class="input-section">
+        <div class="input-container">
+          <input 
+            type="text" 
+            class="message-input" 
+            placeholder="Type your message..."
+          >
+          <button class="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="Contact">
+    <h1 class="contact-text1">Contact Us</h1>
+    <div class="contact-container">
+      <div class="name_input">
+        <label for="name" class="required-label">Name</label>
+        <input type="text" class="input_name" placeholder="Enter Your Name">
+      </div>
+
+      <div class="name_input">
+        <label for="email" class="required-label">Email</label>
+        <input type="email" class="input_email" placeholder="your.email@example.com">
+      </div>
+      
+      <div class="name_input">
+        <label for="message" class="required-label">Message</label>
+        <textarea id="message" class="input_message" placeholder="Tell us how we can help you in your financial journey..."></textarea>
+      </div>
+      
+      <button class="btn-contact">Send Message</button>
+    </div>
+  </section>
+
+  <section class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What is MoneyMind KE?</span>
+        <i class="fas fa-chevron-down icon"></i>
+      </div>
+      <div class="faq-answer">
+        <p>MoneyMind KE is a platform that simplifies personal finance through lessons inspired by bestselling books, tailored for Kenyan youth.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Is it free to use?</span>
+        <i class="fas fa-chevron-down icon"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Yes! Our basic features are completely free. Premium content may be introduced later.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How do I start learning?</span>
+        <i class="fas fa-chevron-down icon"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Just sign up and begin your first module. You can learn at your own pace, anytime.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="footer-inner">
+    <h2 class="footer-title">Empowering Kenyan Students with Financial Wisdom</h2>
+
+    <div class="visitor-counter pulse">
+      <span class="visitor-icon">👥</span>
+      <span class="visitor-text">Visitors: <span id="visitorCount">0</span></span>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://github.com" class="footer-link" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> Github
+      </a>
+      <a href="mailto:contact@example.com" class="footer-link">
+        <i class="fas fa-envelope"></i> Email
+      </a>
     </div>
   </div>
-</section>
 
-<section class="ai-section">
-            <h1 class="ai-title">AI Assistant</h1>
-<div class="ai-container">
-        <div class="chat-area">
-            <div class="message-container">
-                <div class="avatar">
-                  <img src="assets/mage--robot.svg">
-                </div>
-                <div class="message">
-                    Hello there how can i help you today?
-                </div>
-            </div>
-        </div>
-        
-        <div class="input-section">
-            <div class="input-container">
-                <input 
-                    type="text" 
-                    class="message-input" 
-                    placeholder="Type your message..."
-                >
-                <button class="send-button">Send</button>
-            </div>
-        </div>
-    </div>
-</section>
+  <button class="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+</footer>
 
-<section class="contact-section" id="Contact">
-  <h1 class="contact-text1">Contact Us</h1>
-  <div class="contact-container">
-  <div class="name_input">
-<label for="name" class="required-label">Name</label>
-     <input type="text" class="input_name" placeholder="Enter Your Name">
-  </div>
-
- <div class="name_input">
-<label for="email" class="required-label">Email</label>
-     <input type="email" class="input_email" placeholder="your.email@example.com">
-  </div>
-  <div class="name_input">
-<label for="message" class="required-label">Message</label>
-      <textarea id="message" class="input_message" placeholder="Tell us how we can help you in your financial journey..."></textarea>
-  </div>
-<button class="btn-contact">Send Message</button>
-
-
-
-
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-  </main>
-
-
-    
-  </body>
-  </html>
+<script src="main.js"></script>  
+</body>
+</html>
