@@ -17,7 +17,7 @@
   <div class="nav-container">
     <a class="logo">
       <img src="assets/Logo.png" alt="Logo">
-      <span>MONEY MIND KE</span>
+      <h1>MONEY MIND KE</h1>
     </a>
 
     <div class="nav-links">
@@ -44,7 +44,6 @@
     <div class="about-container">
       <h2 class="about-title">About Us</h2>
 
-      <!-- LEFT COLUMN -->
       <div class="content-left">
         <div class="section-card">
           <h3 class="section-title">How It All Started</h3>
@@ -61,12 +60,29 @@
         </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
       <div class="image-container">
         <img src="assets/aboutimage.png" alt="about-image" class="about-image">
       </div>
     </div>
   </section>
+
+  <section id="audience-toggle" class="audience-section">
+  <div class="toggle-buttons">
+    <button onclick="showAudience('students')" id="studentsBtn" class="active">For Students</button>
+    <button onclick="showAudience('mentors')" id="mentorsBtn">For Mentors</button>
+  </div>
+
+  <div id="studentsContent" class="audience-content active">
+    <h2>For Students</h2>
+    <p>Master personal finance from bestselling books, track progress, and earn rewards for completing lessons.</p>
+  </div>
+
+  <div id="mentorsContent" class="audience-content">
+    <h2>For Mentors</h2>
+    <p>Join as a mentor to guide students, share expert insights, and lead financial literacy sessions.</p>
+  </div>
+</section>
+
 
   <section id="Features" class="features-section">
     <h2 class="features-title">Product Features</h2>

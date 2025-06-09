@@ -1,3 +1,18 @@
+ function showAudience(type) {
+    document.getElementById("studentsContent").classList.remove("active");
+    document.getElementById("mentorsContent").classList.remove("active");
+    document.getElementById("studentsBtn").classList.remove("active");
+    document.getElementById("mentorsBtn").classList.remove("active");
+
+    if (type === "students") {
+      document.getElementById("studentsContent").classList.add("active");
+      document.getElementById("studentsBtn").classList.add("active");
+    } else {
+      document.getElementById("mentorsContent").classList.add("active");
+      document.getElementById("mentorsBtn").classList.add("active");
+    }
+  }
+
 document.addEventListener("DOMContentLoaded", function () {
   const faqItems = document.querySelectorAll(".faq-item");
 
