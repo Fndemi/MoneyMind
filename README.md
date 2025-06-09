@@ -10,16 +10,13 @@ MoneyMind KE helps students learn money management through bite-sized lessons fr
 ## Features
 - **Daily Lessons**: 5-minute financial education modules
 - **Budget Tracker**: Automated expense tracking via M-Pesa SMS
-- **Goal Setting**: Visual progress tracking with rewards
-- **🤖 AI Financial Assistant**: Interactive AI-powered chatbot that provides personalized financial guidance, answers money-related questions, and offers tailored advice for Kenyan students
+- **Goal Setting**: Visual progress tracking 
+- **🤖 AI Financial Assistant**: Interactive AI-powered chatbot that provides personalized answers about the startup
 
 ## AI Assistant
-The integrated AI assistant helps users with:
-- Personalized budgeting advice
-- Financial planning guidance
-- Real-time answers to money management questions
-- Custom recommendations based on user goals
-- Interactive learning support for financial concepts
+The integrated AI assistant helps users with questions regarding the startup
+
+
 
 ## Tech Stack
 - HTML5
@@ -27,7 +24,7 @@ The integrated AI assistant helps users with:
 - JavaScript
 - Font Awesome Icons
 - Google Fonts
-- AI Integration for intelligent financial assistance
+- puter.js
 
 ## Setup
 1. Clone the repository
