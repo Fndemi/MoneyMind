@@ -37,12 +37,4 @@ MoneyMind KE helps students learn money management through bite-sized lessons fr
     └── [images and icons]
 ```
 
-## Team
 
-- Florence Ndemi - Founder & CEO
-- Judy Njeri - Product Manager
-- Eric Wanyoike - Lead Developer
-
-## Contact
-
-Email: contact@moneymindke.com
